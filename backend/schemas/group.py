@@ -55,9 +55,9 @@ class GroupStudentReturn(BaseModel):
 
 
 class GroupSignInReturn(BaseModel):
-    id: Optional[int]
+    id: Optional[int] = None
     sem: int
-    program: Program
+    program: Optional[str]
     course: List[Course]
 
     class Config:
@@ -67,7 +67,7 @@ class GroupSignInReturn(BaseModel):
 class GroupReturn(BaseModel):
     id: Optional[int]
     sem: int
-    program: Program
+    program: Optional[str]
 
     class Config:
         orm_mode = True

@@ -4,7 +4,7 @@ SERVER_NAME : Sikshyalaya
 
 PROTOCAL : http
 BACKEND_HOST : localhost
-BACKEND_PORT : 8181
+BACKEND_PORT : 8080
 API_V1_STR : "/api/v1"
 
 WORKERS : 16

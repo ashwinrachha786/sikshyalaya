@@ -138,7 +138,7 @@ class UserReturn(BaseModel):
 
 
 class UserLoginReturn(BaseModel):
-    user: Optional[UserReturn]
+    user: Optional[UserReturn] = None
     msg: str
     two_fa_required: Optional[bool]
 

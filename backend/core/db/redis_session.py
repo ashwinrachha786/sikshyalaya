@@ -11,7 +11,6 @@ class RedisClient:
     async def initialize(self):
         self.client = await aioredis.create_redis_pool(
             f"redis://{settings.REDIS_HOST}",
-            password=settings.REDIS_PASSWORD,
             db=self.db,
         )
 

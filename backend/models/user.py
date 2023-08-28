@@ -40,7 +40,7 @@ class User(Base):
     contact_number = Column(String(length=32), index=True, nullable=False)
 
     hashed_password = Column(String, nullable=False)
-    is_active = Column(Boolean(), default=False)
+    is_active = Column(Boolean(), default=True)
     user_type = Column(
         SmallInteger,
         default=settings.UserType.STUDENT.value,
